@@ -28,20 +28,20 @@ class _LoginScreenState extends State<LoginScreen> {
       body: Center(
         child: SingleChildScrollView(
           child: ConstrainedBox(
-            constraints: BoxConstraints(maxWidth: 400), // 🔹 límite de ancho
+            constraints: BoxConstraints(maxWidth: 400), // límite de ancho
             child: Padding(
               padding: const EdgeInsets.all(24.0),
               child: Form(
                 key: _formKey,
                 child: Column(
                   children: [
-                    // 🔹 Logo de empresa (debe estar en assets y declarado en pubspec.yaml)
+                    //Logo de empresa 
                     Image.asset(
                       'assets/images/agucare_logo.png',
                       height: 100,
                     ),
                     SizedBox(height: 30),
-                    // 🔹 Campo Email
+                    // Campo Email
                     TextFormField(
                       decoration: InputDecoration(
                         labelText: 'Email',
@@ -55,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       onSaved: (value) => _email = value!,
                     ),
                     SizedBox(height: 20),
-                    // 🔹 Campo Contraseña
+                    // Campo Contraseña
                     TextFormField(
                       obscureText: true,
                       decoration: InputDecoration(
