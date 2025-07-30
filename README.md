@@ -1,16 +1,41 @@
-# historial_recetas_nuevo
+# 🩺 Historial de Recetas Médicas
 
-A new Flutter project.
+Aplicación Flutter que permite a los usuarios consultar de forma sencilla y rápida su historial de recetas médicas. Diseñada con una interfaz amigable y adaptable a dispositivos móviles y web. Este proyecto fue desarrollado como parte de un desafío técnico para postular a **Agucare**.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Capturas
 
-A few resources to get you started if this is your first Flutter project:
+| Pantalla de inicio | Pantalla de login | Historial de recetas |
+|--------------------|-------------------|-----------------------|
+| ![Inicio](assets/images/captura_inicio.png) | ![Login](assets/images/captura_login.png) | ![Recetas](assets/images/captura_recetas.png) |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ✨ Funcionalidades
+
+- Pantalla de bienvenida con branding personalizado.
+- Autenticación simple con email y contraseña.
+- Visualización del historial de recetas (simulado desde un servicio).
+- Diseño limpio y responsive.
+- Botón de recarga manual (pull to refresh).
+- Manejo de errores con `SnackBar`.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+- **Flutter** 3.x
+- **Dart**
+- `FutureBuilder` para manejar llamadas simuladas tipo API
+- Patrón `StatefulWidget` y navegación con `Navigator`
+- Gestión de datos simulada mediante servicios locales
+
+---
+
+## 🚀 ¿Cómo correr el proyecto?
+
+1. **Clona el repositorio:**
+   ```bash
+   git clone https://github.com/Magdasanhueza/historial_recetas.git
+   cd historial_recetas
