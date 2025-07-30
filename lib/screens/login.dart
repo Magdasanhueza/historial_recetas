@@ -70,7 +70,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       onSaved: (value) => _password = value!,
                     ),
                     SizedBox(height: 30),
-                    // 🔹 Botón
+                    
                     SizedBox(
                       width: double.infinity,
                       child: ElevatedButton(
@@ -87,7 +87,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         child: Text(
                           'Iniciar sesión',
-                          style: TextStyle(fontSize: 16),
+                          style: TextStyle(color: Colors.white, fontSize: 16),
                         ),
                       ),
                     ),

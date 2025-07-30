@@ -8,7 +8,7 @@ Aplicación Flutter que permite a los usuarios consultar de forma sencilla y rá
 
 | Pantalla de inicio | Pantalla de login | Historial de recetas |
 |--------------------|-------------------|-----------------------|
-| ![Inicio](assets/images/captura_inicio.png) | ![Login](assets/images/captura_login.png) | ![Recetas](assets/images/captura_recetas.png) |
+| ![Inicio](assets/images/pantalla_inicio.png) | ![Login](assets/images/pantalla_login.png) | ![Recetas](assets/images/pantalla_receta.png) |
 
 ---
 
