@@ -24,7 +24,6 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[100],
-      appBar: AppBar(title: Text('Iniciar Sesión')),
       body: Center(
         child: SingleChildScrollView(
           child: ConstrainedBox(
@@ -53,6 +52,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       validator: (value) =>
                           value == null || !value.contains('@') ? 'Email inválido' : null,
                       onSaved: (value) => _email = value!,
+
+                       onFieldSubmitted: (_) {
+                        _formKey.currentState!.save();
+                        _submit();
+                      },
                     ),
                     SizedBox(height: 20),
                     // Campo Contraseña
@@ -68,6 +72,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       validator: (value) =>
                           value == null || value.length < 6 ? 'Mínimo 6 caracteres' : null,
                       onSaved: (value) => _password = value!,
+
+                      onFieldSubmitted: (_) {
+                        _formKey.currentState!.save();
+                        _submit();
+                      },
                     ),
                     SizedBox(height: 30),
                     

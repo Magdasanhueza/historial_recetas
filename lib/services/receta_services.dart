@@ -20,6 +20,20 @@ class RecetaService {
         "doctor": "Dr. Juan López",
         "notas": "Después de las comidas"
       },
+      {
+        "id": "3",
+        "medicacion": "lamotrigina 100mg",
+        "fecha_emision": "2023-06-10",
+        "doctor": "Dr. Gonzalo Bustamante",
+        "notas": "Cada mañana"
+      },
+      {
+        "id": "4",
+        "medicacion": "Pregabalina 75mg",
+        "fecha_emision": "2023-06-10",
+        "doctor": "Dr. Simi Similar",
+        "notas": "Antes de dormir"
+      },
     ];
   
 
