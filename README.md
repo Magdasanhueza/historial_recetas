@@ -67,12 +67,12 @@ Antes de comenzar, asegúrate de tener instalado lo siguiente:
 4. ## 🧪 Correr los tests
 
    ```bash
-  flutter test 
+   flutter test 
 
 5. ## 🧪 Correr un test en especifico
 
    ```bash
-  flutter test test/recetas_services_test.dart
+   flutter test test/recetas_services_test.dart
 
 ---
 
