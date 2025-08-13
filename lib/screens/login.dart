@@ -49,14 +49,18 @@ class _LoginScreenState extends State<LoginScreen> {
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
-                      validator: (value) =>
-                          value == null || !value.contains('@') ? 'Email inválido' : null,
-                      onSaved: (value) => _email = value!,
+                      validator: (value) {
+                        if (value == null || value.trim().isEmpty) {
+                          return 'Por favor ingresa tu email';
+                        }
 
-                       onFieldSubmitted: (_) {
-                        _formKey.currentState!.save();
-                        _submit();
-                      },
+                        final emailRegex = RegExp(
+                          r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$' );
+                        if (!emailRegex.hasMatch(value.trim())) {
+                          return 'Email inválido (ej.magda@magdasanhueza.org)';
+                        }
+                        return null; // Email válido
+                      }
                     ),
                     SizedBox(height: 20),
                     // Campo Contraseña
